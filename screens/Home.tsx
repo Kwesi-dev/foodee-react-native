@@ -46,7 +46,7 @@ const Home = () => {
               />
             </StyledView>
             <StyledView className="w-[44px] h-[44px] bg-pink rounded-[16px] flex flex-row items-center justify-center">
-              <FilterIcon width={20} height={20} fill="#ffff" />
+              <FilterIcon width={24} height={24} />
             </StyledView>
           </StyledView>
           <StyledView>
