@@ -7,6 +7,8 @@ import {
   StyledTextInput,
   StyledView,
 } from "../components/styledComponents/StyledComponents";
+import { Ionicons } from "@expo/vector-icons";
+import FilterIcon from "../assets/images/Filter.svg";
 
 const categories = [
   {
@@ -37,12 +39,15 @@ const Home = () => {
         <StyledView className="mt-8">
           <StyledView className="flex flex-row justify-between mb-4 px-4">
             <StyledView className="w-[80%] bg-[#F5F5F5] pl-4 space-x-2 rounded-[16px] h-[44px] flex flex-row items-center">
+              <Ionicons name="search" size={18} color="#3D405B" />
               <StyledTextInput
                 placeholder="Search ..."
                 className="text-darkText"
               />
             </StyledView>
-            <StyledView className="w-[44px] h-[44px] bg-pink rounded-[16px] flex flex-row items-center justify-center"></StyledView>
+            <StyledView className="w-[44px] h-[44px] bg-pink rounded-[16px] flex flex-row items-center justify-center">
+              <FilterIcon width={20} height={20} fill="#ffff" />
+            </StyledView>
           </StyledView>
           <StyledView>
             <StyledText className="text-3xl text-darkText px-4">
@@ -95,6 +100,82 @@ const Home = () => {
                     image={cat.image}
                   />
                 ))}
+              </StyledScrollView>
+            </StyledView>
+            <StyledView className="px-4 mt-4">
+              <StyledText className="text-3xl text-darkText mb-3">
+                Best Offers 💕
+              </StyledText>
+              <StyledScrollView showsVerticalScrollIndicator={false}>
+                <StyledView
+                  className="w-full h-[116px] rounded-[28px] mb-4 flex flex-row items-center p-2 bg-white"
+                  style={{
+                    shadowColor: "rgb(242,204,143)",
+                    shadowOpacity: 0.4,
+                    shadowOffset: { width: -2, height: 20 },
+                    shadowRadius: 4,
+                    elevation: 2,
+                  }}
+                >
+                  <StyledImage
+                    source={require("../assets/images/hotdog.png")}
+                    className="mr-6"
+                  />
+                  <StyledView>
+                    <StyledText className="text-2xl text-darkText">
+                      Frenchdog
+                    </StyledText>
+                    <StyledText className="text-darkText">
+                      Tasty&Spicy 🌶🌶🌶
+                    </StyledText>
+                  </StyledView>
+                </StyledView>
+                <StyledView
+                  className="w-full h-[116px] rounded-[28px] mb-4 flex flex-row items-center p-2 bg-white"
+                  style={{
+                    shadowColor: "rgb(242,204,143)",
+                    shadowOpacity: 0.4,
+                    shadowOffset: { width: -2, height: 20 },
+                    shadowRadius: 4,
+                    elevation: 2,
+                  }}
+                >
+                  <StyledImage
+                    source={require("../assets/images/hotdog.png")}
+                    className="mr-6"
+                  />
+                  <StyledView>
+                    <StyledText className="text-2xl text-darkText">
+                      Frenchdog
+                    </StyledText>
+                    <StyledText className="text-darkText">
+                      Tasty&Spicy 🌶🌶🌶
+                    </StyledText>
+                  </StyledView>
+                </StyledView>
+                <StyledView
+                  className="w-full h-[116px] rounded-[28px] mb-4 flex flex-row items-center p-2 bg-white"
+                  style={{
+                    shadowColor: "rgb(242,204,143)",
+                    shadowOpacity: 0.4,
+                    shadowOffset: { width: -2, height: 20 },
+                    shadowRadius: 4,
+                    elevation: 2,
+                  }}
+                >
+                  <StyledImage
+                    source={require("../assets/images/hotdog.png")}
+                    className="mr-6"
+                  />
+                  <StyledView>
+                    <StyledText className="text-2xl text-darkText">
+                      Frenchdog
+                    </StyledText>
+                    <StyledText className="text-darkText">
+                      Tasty&Spicy 🌶🌶🌶
+                    </StyledText>
+                  </StyledView>
+                </StyledView>
               </StyledScrollView>
             </StyledView>
           </StyledView>
