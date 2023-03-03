@@ -98,6 +98,11 @@ const Home = ({ navigation }) => {
                     title={cat.title}
                     key={cat.title}
                     image={cat.image}
+                    onPress={() =>
+                      navigation.navigate("Category", {
+                        title: cat.title,
+                      })
+                    }
                   />
                 ))}
               </StyledScrollView>

@@ -2,6 +2,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import Tabs from "./navigations/Tabs";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import CategoryScreen from "./screens/CategoryScreen";
+import CategoryCustomHeader from "./components/core/CategoryCustomHeader";
 const Stack = createNativeStackNavigator();
 export default function App() {
   return (
@@ -14,7 +15,13 @@ export default function App() {
             headerShown: false,
           }}
         />
-        <Stack.Screen name="Category" component={CategoryScreen} />
+        <Stack.Screen
+          name="Category"
+          component={CategoryScreen}
+          options={{
+            header: (props) => <CategoryCustomHeader {...props} />,
+          }}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );

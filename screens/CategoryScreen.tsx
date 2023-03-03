@@ -4,10 +4,12 @@ import {
   StyledView,
 } from "../components/styledComponents/StyledComponents";
 
-const CategoryScreen = () => {
+const CategoryScreen = ({ route, navigation }) => {
+  const { title } = route.params;
   return (
     <StyledView>
       <StyledText>cateory</StyledText>
+      <StyledText>{title}</StyledText>
     </StyledView>
   );
 };
