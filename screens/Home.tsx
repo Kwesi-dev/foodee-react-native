@@ -32,7 +32,7 @@ const categories = [
     image: require("../assets/images/drink.png"),
   },
 ];
-const Home = () => {
+const Home = ({ navigation }) => {
   return (
     <StyledView className="h-full bg-[#ffff]">
       <StyledScrollView className="h-full" showsVerticalScrollIndicator={false}>
