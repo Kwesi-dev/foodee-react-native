@@ -1,4 +1,4 @@
-import { Text } from "react-native";
+import { Text, TouchableOpacity } from "react-native";
 import { Image } from "react-native";
 import { View } from "react-native";
 import { styled } from "nativewind";
@@ -10,3 +10,4 @@ export const StyledText = styled(Text);
 export const StyledImage = styled(Image);
 export const StyledTextInput = styled(TextInput);
 export const StyledScrollView = styled(ScrollView);
+export const StyledTouchableOpacity = styled(TouchableOpacity);

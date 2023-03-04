@@ -3,19 +3,23 @@ import React from "react";
 import {
   StyledImage,
   StyledText,
+  StyledTouchableOpacity,
   StyledView,
 } from "../styledComponents/StyledComponents";
 
-const CategoryCustomHeader = ({ props }: any) => {
+const CategoryCustomHeader = (props) => {
   return (
     <StyledView className="z-[1] h-[330px] bg-pink rounded-b-[28px] relative pt-12 px-4">
       <StyledView className="flex flex-row items-center justify-between">
         <StyledText className="text-white text-3xl font-semibold">
           Mr. Cheezy
         </StyledText>
-        <StyledView className="h-[44px] w-[44px] bg-[#F5CAC3] rounded-[16px] flex items-center justify-center">
+        <StyledTouchableOpacity
+          className="h-[44px] w-[44px] bg-[#F5CAC3] rounded-[16px] flex items-center justify-center"
+          onPress={() => props.navigation.navigate("HomeScreen")}
+        >
           <AntDesign name="close" size={24} color="#F28482" />
-        </StyledView>
+        </StyledTouchableOpacity>
       </StyledView>
       <StyledView className="rounded-full bg-[#F7EDE2] w-[160px] mt-8 py-1">
         <StyledText className="text-center text-pink text-lg">
