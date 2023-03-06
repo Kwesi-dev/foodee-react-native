@@ -10,6 +10,7 @@ import { Fontisto, SimpleLineIcons, Ionicons } from "@expo/vector-icons";
 import Location from "../screens/Location";
 import Cart from "../screens/Cart";
 import Profile from "../screens/Profile";
+import CartHeader from "../components/core/CartHeader";
 const Tab = createBottomTabNavigator();
 type iconTypes = {
   focused: boolean;
@@ -74,6 +75,7 @@ const Tabs = () => {
         component={Cart}
         name="Cart"
         options={{
+          header: (props) => <CartHeader {...props} />,
           tabBarIcon: ({ focused }: iconTypes): any => (
             <StyledView className="flex items-center space-y-1">
               <SimpleLineIcons
