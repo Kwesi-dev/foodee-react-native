@@ -76,6 +76,14 @@ const Tabs = () => {
         name="Cart"
         options={{
           header: (props) => <CartHeader {...props} />,
+          tabBarBadge: 2,
+          tabBarBadgeStyle: {
+            backgroundColor: "#F28482",
+            color: "#ffff",
+            position: "absolute",
+            top: 10,
+            left: 0,
+          },
           tabBarIcon: ({ focused }: iconTypes): any => (
             <StyledView className="flex items-center space-y-1">
               <SimpleLineIcons

@@ -7,7 +7,7 @@ import {
   StyledView,
 } from "../styledComponents/StyledComponents";
 
-const CategoryCustomHeader = (props) => {
+const CategoryCustomHeader = (props: any) => {
   return (
     <StyledView className="z-[1] h-[330px] bg-pink rounded-b-[28px] relative pt-12 px-4">
       <StyledView className="flex flex-row items-center justify-between">
