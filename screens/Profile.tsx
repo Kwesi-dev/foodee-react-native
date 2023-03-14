@@ -5,11 +5,7 @@ import {
 } from "../components/styledComponents/StyledComponents";
 
 const Profile = () => {
-  return (
-    <StyledView>
-      <StyledText>Profile</StyledText>
-    </StyledView>
-  );
+  return <StyledView className="flex-1 bg-white"></StyledView>;
 };
 
 export default Profile;
