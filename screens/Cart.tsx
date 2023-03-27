@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   StyledImage,
   StyledScrollView,
@@ -11,7 +11,13 @@ import { StatusBar } from "expo-status-bar";
 import { SafeAreaView } from "react-native-safe-area-context";
 import CartCard from "../components/molecules/CartCard";
 
-const Cart = () => {
+const Cart = ({ navigation }) => {
+  const user = false;
+  useEffect(() => {
+    if (!user) {
+      navigation.navigate("Login");
+    }
+  }, [user]);
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: "#ffff" }}>
       <StyledScrollView
