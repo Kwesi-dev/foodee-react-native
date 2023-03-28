@@ -10,6 +10,7 @@ import {
 import { Ionicons } from "@expo/vector-icons";
 import FilterIcon from "../assets/images/Filter.svg";
 import { SafeAreaView } from "react-native-safe-area-context";
+import useFetch from "../hooks/useFetch";
 
 const categories = [
   {
@@ -34,6 +35,9 @@ const categories = [
   },
 ];
 const Home = ({ navigation }) => {
+  const { data, error, loading } = useFetch({
+    url: "https://pizza-and-desserts.p.rapidapi.com/desserts",
+  });
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: "#ffff" }}>
       <StyledView className="h-full bg-[#ffff]">
