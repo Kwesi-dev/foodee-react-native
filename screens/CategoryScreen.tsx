@@ -31,7 +31,10 @@ const CategoryScreen = ({ route, navigation }) => {
     <SafeAreaView style={{ flex: 1, backgroundColor: "#ffff" }}>
       <StatusBar backgroundColor="#F28482" />
       <StyledView className="relative px-4 bg-white">
-        <StyledScrollView showsVerticalScrollIndicator={false}>
+        <StyledScrollView
+          showsVerticalScrollIndicator={false}
+          className="mb-20"
+        >
           <StyledView className="bg-white flex-1 pt-10 pb-10">
             <StyledText className="text-2xl font-medium text-darkText mb-4">
               Add More Flavor 🤩

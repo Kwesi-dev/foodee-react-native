@@ -116,7 +116,10 @@ const Home = ({ navigation }) => {
                 <StyledText className="text-3xl text-darkText mb-3">
                   Best Offers 💕
                 </StyledText>
-                <StyledScrollView showsVerticalScrollIndicator={false}>
+                <StyledScrollView
+                  showsVerticalScrollIndicator={false}
+                  className="mb-20"
+                >
                   <StyledView
                     className="w-full h-[116px] rounded-[28px] mb-4 flex flex-row items-center p-2 bg-white"
                     style={{
